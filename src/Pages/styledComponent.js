@@ -172,12 +172,12 @@ color: #00796F;
 `
 
 const saleMain = keyframes`
-  0%{background-image:url(./images/sale_visual01.jpg);}
-  20%{background-image:url(./images/sale_visual02.jpg);}
-  40%{background-image:url(./images/sale_visual03.jpg);}
-  60%{background-image:url(./images/sale_visual04.jpg);}
-  80%{background-image:url(./images/sale_visual05.jpg);}
-  100%{background-image:url(./images/sale_visual01.jpg);}
+  0%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
+  20%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual02.jpg'})}
+  40%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual03.jpg'})}
+  60%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual04.jpg'})}
+  80%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual05.jpg'})}
+  100%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
 `
 const SaleMain = styled.div`
 width: 1276px; height: 900px;
@@ -195,11 +195,11 @@ const StyledSale = () => {
 
 
 const visualMain = keyframes`
-  0%{background-image:url(./images/visual_img01.jpg);}
-  25%{background-image:url(./images/visual_img02.jpg);}
-  50%{background-image:url(./images/visual_img03.jpg);}
-  75%{background-image:url(./images/visual_img04.jpg);}
-  100%{background-image:url(./images/visual_img01.jpg);}
+  0%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
+  25%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img02.jpg'})}
+  50%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img03.jpg'})}
+  75%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img04.jpg'})}
+  100%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
 `
 const VisualMain =styled.div`
 width: 1276px; height:500px;

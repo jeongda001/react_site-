@@ -75,7 +75,7 @@ function App() {
                     
                     return(
                       <Col key={NewData.id}>
-                        <div className='thum_img' >
+                        <div className='thum_img'>
                           <Link to={`/detail/${i}`}>
                             <img src={NewData.image} alt="new_img" />
                             
@@ -129,7 +129,7 @@ function App() {
                         
                             <div className='thum_img' >
                               <Link to={`/best/${i}`}>
-                                <img src={BestData.image} alt="new_img" />
+                                <img src={BestData.image} alt="new_img"/>
                                 <p className='new_title'>{BestData.title}</p>
                                 <p className='new_price'>{BestData.price}원</p>
                               </Link>
@@ -139,10 +139,10 @@ function App() {
                                 setPopup(true)
                                 }}
                                 >
-                                  <img src={BestData.cartimg} alt="cart_img" />
+                                  <img src={BestData.cartimg} alt="cart_img"/>
                                 </div>
                                 <div className='heart_img'>
-                                  <img src={BestData.heartimg} alt="heart_img" />
+                                  <img src={BestData.heartimg} alt="heart_img"/>
                                 </div>
                               </div>
 
