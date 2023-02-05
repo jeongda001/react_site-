@@ -1,0 +1,1057 @@
+@import './SassStyle.scss';
+
+
+header{
+  width: 100%; height: 130px;
+  margin:0 auto;
+ 
+  div.logo{
+    width: 196px; height: 100px;
+    margin-left: 200px;
+    padding-top:30px;
+    
+    img{
+      width: 100%;
+    }
+  }
+  
+  ul{
+    float:right;
+    overflow: hidden;
+
+    li{
+      width: 80px;  height: 30px; 
+      line-height: 30px;
+      font-size: 12px;
+      float: left;
+      color:#ccc;
+    }
+  }
+
+}
+
+
+.lnb{
+  width: 100%;
+  margin:0 auto;
+  overflow: hidden;
+  background-color: #00796F;
+
+  li{
+    @include fontPoint;
+    width: 250px; height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    color:white;
+  }
+}
+
+.title{
+  @include fontnomal;
+  width: 200px; height: 80px;
+  text-align: center;
+  line-height: 80px;
+  margin:0 auto;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top:50px;
+}
+
+
+
+.New_box{
+  width: 1080px; 
+  margin:30px auto;
+
+
+  div.thum_img{
+    position:relative;
+    margin-bottom:20px;
+  
+    img{
+      @include thumbImg;
+     
+    }
+  
+    p.new_title{
+      @include fontnomal;
+      height: 40px;
+      font-size: 14px;
+      line-height: 40px; 
+      border-bottom:1px solid #00796F;
+      margin:0;
+    }
+  
+    p.new_price{
+      @include fontnomal;
+      height: 40px;
+      font-size: 14px;
+      margin:0;
+      line-height: 40px;
+    }
+    div.new_on{
+      width: 40px; height: 90px;
+      opacity:0;
+      position:absolute;
+      bottom:80px; right: 0;
+      cursor: pointer;
+
+      div.heart_img {  
+        img{
+          width: 27px; height: 27px;
+          position:absolute;
+          bottom:55px; right:10px;
+        }
+      }
+  
+      div.cart_img{
+  
+        img{
+          width: 27px; height: 27px;
+          position:absolute;
+          bottom: 20px; right:10px;
+   
+        }
+      }
+    }
+  }
+  div.thum_img:hover{
+    div.new_on{
+      opacity:1;
+    }
+  }
+
+}
+
+
+.banner{
+  width:1276px;
+  overflow: hidden;
+  display: flex;
+  margin-top:50px;
+  
+
+  >div.banner_top{
+    width: 628px; height: 500px;
+    margin-right: 20px;
+    position:relative;
+    cursor: pointer;
+
+    div.banner01_on{
+      @include fontnomal;
+      width: 628px; height: 400px;
+      background-color: rgba(0,0,0,0.4);
+      color:white;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 400px;
+      position:absolute;
+      top:0; left: 0;
+      transition: all 0.5s;
+      text-shadow: 3px 2px 2px gray;
+    }
+    div.banner01_on:hover{
+      background-color: rgba(0,0,0,0);
+    }
+  }
+
+
+  >div.banner_bottom{
+    width: 628px; height: 500px;
+    margin-right: 20px;
+    position:relative;
+    cursor: pointer;
+
+    div.banner02_on{
+      @include fontPoint;
+      width: 628px; height: 400px;
+      background-color: rgba(0,0,0,0.4);
+      color:white;
+      text-align: center;
+      font-size: 43px;
+      font-weight: bold;
+      line-height: 400px;
+      position:absolute;
+      top:0; left: 0;
+      transition: all 0.5s;
+      text-shadow: 3px 2px 2px gray;
+    }
+    div.banner02_on:hover{
+      background-color: rgba(0,0,0,0);
+    }
+
+  }
+
+
+
+
+
+
+
+
+}
+
+
+
+.trand{
+  width: 1276px; height: 650px;
+  margin:0 auto;
+
+  div.trand_btn{
+    width: 843px;
+    margin:0 auto;
+    button{
+      @include trandbutton;
+      @include fontnomal;
+      margin-right: 10px;
+    }
+  }
+
+  
+  .trand_box{
+    width: 1276px;
+    height:400px;
+    background-color: #fafff0;
+    overflow: hidden;
+    margin-top:50px;
+    >div{
+      width: 628px; height: 400px;
+      float: left;
+    
+      &:nth-child(1){
+        margin-right: 20px;
+      }
+
+      p{
+        &:nth-child(1){
+          width: 530px; height: 150px;
+          @include fontPoint;
+          font-size: 70px;
+          text-align: center;
+          line-height: 150px;
+          color:#00796F;
+        
+        }
+
+        &:nth-child(2){
+          width: 550px; height: 40px;
+          @include fontnomal;
+          font-size: 22px;
+          margin:10px auto;
+          font-weight: bold;
+        }
+        &:nth-child(3){
+          width: 550px; height: 80px;
+          @include fontnomal;
+          font-size: 19px;
+          margin:0 auto;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+.detail{
+  width: 1060px; 
+  margin:50px auto;
+  
+
+  >div.detail_top{
+    overflow: hidden;
+    div.detail_img{
+      width: 520px; height:520px;
+      margin-right: 80px;
+      float: left;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    
+    div.detail_right{
+      float: left;
+
+        p.detail_title{
+          @include fontnomal;
+          font-weight: bold;
+          height: 70px;
+          font-size: 25px;
+          line-height: 70px;
+        }
+
+        p.detail_txt{
+          @include fontnomal;
+          font-size: 15px;
+        }
+        p.span1 span{
+          margin-left: 40px;
+        }
+        p.span2 {
+          width: 450px;
+          height: 40px;
+          border-bottom:1px solid #ccc;
+
+          span{
+            margin-left: 25px;
+          }
+        }
+
+
+        div.quantity{
+          button.btn_num{
+            font-family: 'NanumSquareRound';
+            width: 30px; height: 30px;
+            border:1px solid #00796F;
+            background-color: white;
+            font-size: 20px;
+            font-weight: bold;
+            color:#00796F;
+            margin:0 10px;
+          }
+        }
+
+        p.option{
+          font-family: 'NanumSquareRound';   
+          height: 40px;
+          line-height: 50px;
+          font-size: 13px;
+          border-bottom:1px solid #ccc;
+          margin:0;
+        }
+
+        p.mini_txt{
+          font-size: 11px;
+          color:#999;
+        }
+        p.total{
+          width: 450px; height: 60px;
+          font-family: 'NanumSquareRound';
+          font-size: 24px;
+          padding-left: 210px;box-sizing: border-box;
+
+          span{
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+
+        button.btn_buy{
+          font-family: 'NanumSquareRound';
+          font-weight: bold;
+          font-size: 18px;
+          width: 450px; height: 50px;
+          background-color: #00796F;
+          color:white;
+          border:none;
+        }
+        button.btn_buy:hover{
+          background-color: white;
+          color:#00796F;
+          border:1px solid #00796F;
+        }
+
+      div.btn_cart{
+        button{
+          font-family: 'NanumSquareRound';
+          font-weight: 700;
+          width: 50%; height: 50px;
+          color: #00796F;
+          margin-top:10px;
+          border:1px solid #00796F;
+          background-color: white;
+        }
+
+        button:hover{
+          background-color: #00796F;
+          color:white;
+        }
+      }      
+    }
+  }
+
+  >div.detail_bottom{
+    width: 1060px; 
+    margin:0 auto;
+
+  
+
+    button{
+      @include fontnomal;
+      width: 196px; 
+      height: 45px;
+      border:1px solid #00796F;
+      color:#00796F;
+      font-weight: bold;
+      margin-right: 20px;
+      margin-top: 50px;
+
+      &:nth-child(5){
+        margin-right: 0;
+      }
+    }
+    div.explain_img{
+      width: 844px; 
+      margin:0 auto;
+    } 
+  }
+
+}
+
+
+  
+
+  footer{
+    width: 100%; 
+    background-color: #EBF2DE;
+
+
+  >div.footer_top{
+    width: 1276px; height: 300px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:80px 0;
+    box-sizing: border-box;
+    margin-bottom:100px;
+  
+    >div{
+      width: 255px; 
+      float: left;
+      padding-top: 20px;
+      margin-right:40px;
+      
+      img{
+        width: 100%;
+      }
+    }
+  
+    ul{
+      &:nth-child(2){
+        width: 125px;
+        float: left;
+        margin-top:33px;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5){
+        width: 190px; 
+        float: left;
+      }
+
+      &:nth-child(6){
+        width: 230px; 
+        float: left;
+        text-align: center;
+      }
+
+      li{
+        margin:13px 0;
+        color:#999;
+        font-size: 13px;
+        span{
+          @include fontnomal;
+          font-weight: bold;
+          color: #00796F;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+ >div.footer_bottom{
+    width: 1276px;
+    border-top:1px solid #00796F;
+    margin:0 auto;
+    overflow: hidden;
+
+  ul{
+    width: 470px; 
+    float: left;
+    margin-top:15px;
+    
+    li{
+      font-size: 13px;
+      color:#999;
+      margin:10px;
+    }
+  }
+ }
+
+}
+   
+
+.sale{
+  width: 1276px;
+  margin:0 auto;
+
+  div.sale_title{
+    width: 1276px; height: 600px;
+    img{
+      width: 100%;
+    }
+  }
+
+  div.sale_mid{
+    width: 100%; height: 1300px;
+    background-color: #f8efc8;
+  }
+  div.sale_detail{
+    img{
+      width: 100%;
+    }
+  }
+
+
+  div.sale_mid{
+   
+    div.mid_title{
+      p{
+      
+        &:nth-child(1){
+          width: 580px; height: 200px; 
+          line-height: 250px;
+          @include fontPoint;
+          font-size: 60px;
+          margin:0 auto;
+          color:#00796F;
+        }
+        &:nth-child(2){
+          width: 270px; height: 50px;
+          @include fontnomal;
+          font-weight: bold;
+          font-size: 30px;
+          margin:0 auto;
+        }
+        
+      }
+    }
+
+    div.mid_img{
+      width: 844px; height: 400px;
+      margin:20px auto;
+      overflow: hidden;
+      position:relative;
+      div{
+        &:nth-child(1){
+          width: 412px; height: 400px;
+          background-color: lemonchiffon;
+          float: left;
+          margin-right: 20px;
+
+          img{
+            width: 100%;
+          }
+        }
+        &:nth-child(2){
+          width: 412px; height: 400px;
+          background-color: lemonchiffon;
+          float: left;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+   
+    
+      p.best01_txt{
+        width: 412px; height: 65px;
+        @include fontnomal;
+        font-size: 20px;
+        font-weight: bold;
+        position:absolute;
+        bottom:-15px; left: 0;
+        text-align: center;
+        line-height: 65px;
+        color:#00796F;
+      }
+      p.best02_txt{
+        width: 412px; height: 65px;
+        @include fontnomal;
+        font-size: 20px;
+        font-weight: bold;
+        position:absolute;
+        bottom:-15px; right:0;
+        text-align: center;
+        line-height: 65px;
+        color:#00796F;
+      }
+      p.best01_txt:hover,
+      p.best02_txt:hover{
+        background-color: #00796F;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  div.sale_bottom{
+    margin-bottom:80px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+.cart_box{
+  width: 1276px; 
+  margin: 0 auto;
+  >div.ctitle{
+    width: 120px; 
+    @include fontnomal;
+    font-weight: bold;
+    font-size: 30px;
+    margin:100px auto;
+    color:#00796F;
+  }
+
+  >div.cart_top{
+    Table{
+      width: 1276px;
+      margin-bottom: 100px;
+      
+      thead{
+        @include fontnomal;
+        font-size: 15px;
+        background-color: #eee;
+        
+        tr{
+          th{
+            width: 100px; 
+          }
+        }
+      }
+
+      tbody{
+        
+        tr{
+          border-bottom:1px solid #ccc;
+          
+          td{
+            &:nth-child(1){
+              width: 100px; height: 100px;
+              img{
+                width: 100%;
+              }
+            }
+          
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(6){
+              @include fontnomal;
+              font-size: 16px;
+              font-weight: bold;
+              width: 220px; 
+              line-height: 100px;
+            }
+            &:nth-child(4){
+              width: 150px;
+            }
+   
+            &:nth-child(6){
+              width: 30px;
+            }
+          }
+          button.x_btn {
+            @include fontPoint;
+            width: 30px; height: 50px;
+            text-align: center;
+            border:none;
+            background: none;
+            color:#00796F;
+            font-size: 40px;
+            float: right;
+            margin-top:20px;
+          }
+        }
+      }
+    }
+  }
+
+  >div.cart_bottom{
+    width: 1276px; height: 200px;
+    background-color: #f5f5f5;
+    margin-bottom:100px;
+    overflow: hidden;
+    border-top: 1px solid black;
+    >div{
+      width: 200px; height: 200px;
+      text-align: center;
+      @include fontnomal;
+      font-weight: bold;
+      float: right;
+      margin-right: 69px;
+
+      >p{
+        height: 70px;
+        line-height: 100px;
+        &:nth-child(1) {
+          font-size:25px;
+          color:#00796F;
+        }
+        &:nth-child(2){
+          font-size:22px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.cart_modal{
+  position:fixed;
+  top:300px;  left:750px;
+  width: 400px; height: 350px;
+  border:2px solid #00796F;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  p.cart_txt{
+    width: 270px; height: 60px;
+    line-height: 60px;
+    @include fontnomal;
+    color:#00796F;
+    font-size : 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  div.cart_line{
+    @include fontnomal;
+    width: 100%; height: 60px;
+    border-bottom:2px solid #00796F;
+   
+    >p{
+      &:nth-child(1) {
+        width: 150px; height: 42px;
+        margin:10px 20px;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 50px;
+        color:#00796F;
+        float: left;
+      }
+      &:nth-child(2){
+        width: 42px; height: 40px;
+        border:2px dotted #00796F;
+        @include fontPoint;
+        font-size: 30px;
+        float: right;
+        line-height: 40px;
+        text-align: center;
+        margin:10px 10px;
+        color:#00796F;
+      }
+      &:nth-child(2):hover{
+        background-color: #00796F;
+        color:white;
+        cursor: pointer;
+      }
+    }
+  }
+ div{
+
+  &:nth-child(2){
+    width: 120px; height: 120px;
+    margin:10px auto;
+
+    img{
+      width: 100%;
+    }
+  }
+  &:nth-child(4){
+    width: 280px; height: 50px;
+    margin:20px auto;
+    overflow: hidden;
+    
+    button.cartbtn01{
+     
+        @include fontnomal;
+        width: 130px; height: 40px;
+        background-color: #00796F;
+        color:white;
+        font-weight: bold;
+        font-size:17px;
+        float: left;
+        border-radius: 5px;
+        border:1px solid #00796F;
+        margin-right: 15px;
+    }
+    button.cartbtn02{
+        @include fontnomal;
+        width: 130px; height: 40px;
+        color: #00796F;
+        background-color: white;
+        font-weight: bold;
+        font-size:17px;
+        float: left;
+        border-radius: 5px;
+        border:1px solid #00796F;
+    }
+    button.cartbtn01:hover{
+      border:1px solid #00796F;
+      color:#00796F;
+      background-color: white;
+    }
+    button.cartbtn02:hover{
+      background-color: #00796F;
+      color:white;
+    }
+  }
+ }
+}
+
+
+
+  .trend_box{
+
+    div.trend_visual{
+      width: 100%;
+      position: relative;
+      img{
+        width: 100%;   
+      }
+
+      >p.trend_mtxt{
+        width: 100%; height: 150px;
+        text-align: center;
+        line-height: 230px;
+        @include fontnomal;
+        font-weight: bold;
+        font-size: 40px;  
+      }
+      >p.trend_stxt{
+        width: 100%; height: 250px;
+        font-size: 22px;
+        @include fontnomal;
+        text-align: center;
+      }
+    }
+
+    div.trend_healing{
+      width: 100%; 
+      position:relative;
+      img{width: 100%;}
+
+      p.healing_title{
+        position:absolute;
+        top:220px; right: 100px;
+        @include fontPoint;
+        font-size: 100px;
+        color:white;
+      }
+      p.healing_subtitle{
+        position:absolute;
+        top:350px; right: 100px;
+        @include fontnomal;
+        font-size: 50px;
+        font-weight: bold;
+        color:white;
+      }
+
+      p.healing_btn{
+        width: 250px; height: 70px;
+        border-radius: 15px;
+        position:absolute;
+        top:750px; right: 200px;
+        border:5px solid white;
+        @include fontnomal;
+        font-size: 35px;
+        font-weight: bold;
+        color:white;
+        text-align: center;
+        line-height: 70px;
+      }
+      p{
+        &:nth-child(5){
+          @include fontnomal;
+          font-size: 25px;
+          width: 100%; height: 500px;
+          text-align: center;
+          line-height: 70px;
+          margin-top:50px;
+        }
+      }
+    
+    }
+    p.healing_btn:hover{
+      background-color: #00796F;
+      cursor: pointer;
+    }
+
+    .trend_bold{
+      position:relative;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      p.bold_title{
+        position:absolute;
+        top:180px; left: 450px;
+        @include fontPoint;
+        font-size: 100px;
+        color:white;
+      }
+      p.bold_subtitle{
+        position:absolute;
+        top:320px; left: 450px;
+        @include fontnomal;
+        font-size: 50px;
+        font-weight: bold;
+        color:white;
+      }
+
+      p.bold_btn{
+        width: 250px; height: 70px;
+        border-radius: 15px;
+        position:absolute;
+        top:450px; right: 500px;
+        border:5px solid white;
+        @include fontnomal;
+        font-size: 35px;
+        font-weight: bold;
+        color:white;
+        text-align: center;
+        line-height: 70px;
+      }
+      p.bold_btn:hover{
+        background-color: #00796F;
+        cursor: pointer;
+      }
+      p{
+        &:nth-child(5){
+          @include fontnomal;
+          font-size: 25px;
+          width: 100%; height: 500px;
+          text-align: center;
+          line-height: 70px;
+          margin-top:50px;
+        }
+      }
+    }
+
+    
+    .trend_joyful{
+      position:relative;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      p.joy_title{
+        position:absolute;
+        top:370px; right: 500px;
+        @include fontPoint;
+        font-size: 100px;
+        color:white;
+      }
+      p.joy_subtitle{
+        position:absolute;
+        top:500px; right: 500px;
+        @include fontnomal;
+        font-size: 50px;
+        font-weight: bold;
+        color:white;
+      }
+
+      p.joy_btn{
+        width: 250px; height: 70px;
+        border-radius: 15px;
+        position:absolute;
+        top:750px; right: 500px;
+        border:5px solid white;
+        @include fontnomal;
+        font-size: 35px;
+        font-weight: bold;
+        color:white;
+        text-align: center;
+        line-height: 70px;
+      }
+      p.joy_btn:hover{
+        background-color: #00796F;
+        cursor: pointer;
+      }
+      p{
+        &:nth-child(5){
+          @include fontnomal;
+          font-size: 25px;
+          width: 100%; height: 500px;
+          text-align: center;
+          line-height: 70px;
+          margin-top:50px;
+        }
+      }
+    }
+
+    .trend_core{
+      position:relative;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      p.core_title{
+        position:absolute;
+        top:170px; right: 150px;
+        @include fontPoint;
+        font-size: 100px;
+        color:white;
+      }
+      p.core_subtitle{
+        position:absolute;
+        top:300px; right: 150px;
+        @include fontnomal;
+        font-size: 50px;
+        font-weight: bold;
+        color:white;
+      }
+
+      p.core_btn{
+        width: 250px; height: 70px;
+        border-radius: 15px;
+        position:absolute;
+        top:450px; right: 150px;
+        border:5px solid white;
+        @include fontnomal;
+        font-size: 35px;
+        font-weight: bold;
+        color:white;
+        text-align: center;
+        line-height: 70px;
+      }
+      p.core_btn:hover{
+        background-color: #00796F;
+        cursor: pointer;
+      }
+      p{
+        &:nth-child(5){
+          @include fontnomal;
+          font-size: 25px;
+          width: 100%; height: 500px;
+          text-align: center;
+          line-height: 70px;
+          margin-top:50px;
+        }
+      }
+    }
+
+  }
+
