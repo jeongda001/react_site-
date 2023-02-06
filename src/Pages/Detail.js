@@ -5,7 +5,6 @@ import { addItem } from "./store";
 import { useDispatch } from "react-redux";
 
 
-
 export default function Details(props) {
   const navigate = useNavigate()
   const {New} = props
@@ -14,8 +13,6 @@ export default function Details(props) {
   const{Newdetail} =props
   const dispatch = useDispatch()
   const [cartmodal, setPopup] = useState(false)
-
-
 
   return(
     <div className="detail">
@@ -45,13 +42,10 @@ export default function Details(props) {
           <button className="btn_buy">구매하기</button>
           <div className="btn_cart">
           
-
             <button onClick={() => {
               dispatch(addItem({id: New[id].id, title: New[id].title, price: New[id].price, image: New[id].image, count: count}))
               setPopup(true)
             }}>장바구니</button>      
-
-
             <button>찜하기</button>
           </div>
         </div>

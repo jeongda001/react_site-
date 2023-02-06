@@ -3,7 +3,6 @@ import ScrollToTop from "./ScrollToTop";
 
 export default function Sale() {
 
-
   return(
     <div className="sale">
       <div className='sale_title'>

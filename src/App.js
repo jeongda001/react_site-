@@ -15,20 +15,15 @@ import { useDispatch } from 'react-redux';
 import { addItem } from './Pages/store';
 
 
-
-
 function App() {
-
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const [News] = useState(NewData)
   const [Bests] = useState(BestData) 
   const [Newdetails] = useState(NewDeData)
   const [Bestdetails] = useState(BestDeData)
-
-
-
   const [cartmodal, setPopup] = useState(false)
+
 
   return (
     <div className="App">
@@ -41,14 +36,14 @@ function App() {
           <li>고객센터</li>
         </ul>
         <div className='logo'>
-          <Link to='/'>
+          <Link to='/warmtable_react/'>
             <img src={process.env.PUBLIC_URL+'/images/logo.png'} alt="logo" />
           </Link>
         </div>
       </header>
 
       <ul className='lnb'>
-        <li onClick={()=>{navigate('/')}}>Home</li>
+        <li onClick={()=>{navigate('/warmtable_react/')}}>Home</li>
         <li onClick={()=>{navigate('/sub')}}>Warmtable Styling</li>
         <li onClick={()=>{navigate('/sale')}}>Mid-Season Sale</li>
       </ul>
@@ -57,11 +52,8 @@ function App() {
     
 
       <Routes>
-
-
-        <Route path='/*' element={
-         
-          <Container >
+        <Route path='warmtable_react/' element={
+          <Container>
             <div className='visual_main'>
               <StyledVisual/>
             </div>
@@ -145,8 +137,6 @@ function App() {
                                   <img src={BestData.heartimg} alt="heart_img"/>
                                 </div>
                               </div>
-
-                          
                             </div>
                         
                        
@@ -165,7 +155,7 @@ function App() {
           </Container>
         }/>
 
-        <Route path='sub/*' element={<Sub/>}/>
+        <Route path='sub' element={<Sub/>}/>
         <Route path='sale' element={<Sale/>}/>
         <Route path='cart' element={<Cart/>}/>
 
@@ -184,10 +174,6 @@ function App() {
           <Route path='delivery' element={<StyledDelivery/>}/>
           <Route path='exchange' element={<StyledExchange/>}/>  
         </Route> 
-
-    
-     
-
       </Routes>
 
       <footer>

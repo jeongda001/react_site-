@@ -3,17 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCount, subCount, deleteItem } from './store';
 import ScrollToTop from './ScrollToTop';
 
-
-
-
 export default function Cart() {
   const state = useSelector((state) => {return state})
   const dispatch = useDispatch()
   let totalprice = 0
   
-
-
-
   const btnstyle ={
     width: '33px',
     height: '33px',
@@ -26,8 +20,6 @@ export default function Cart() {
   }
 
   return(
-  
-
     <div className='cart_box'>
       <div className='ctitle'>장바구니</div>
       <div className='cart_top'>
@@ -88,7 +80,4 @@ export default function Cart() {
         <ScrollToTop/>
     </div>
   )
-
-
-
 }

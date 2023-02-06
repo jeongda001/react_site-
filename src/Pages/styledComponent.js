@@ -1,231 +1,176 @@
 import styled, { keyframes } from "styled-components"
+
+
 const NameTitle = styled.p`
-width: 1060px; height: 30px;
-font-family: 'NanumSquareRound';
-font-weight: bold;
-font-size:16px;
-line-height: 30px;
-margin-top:30px;
+  width: 1060px; height: 30px;
+  font-family: 'NanumSquareRound';
+  font-weight: bold;
+  font-size:16px;
+  line-height: 30px;
+  margin-top:30px;
 `
 const Delivery = styled.div`
-    width: 1060px;
-    margin-bottom:60px;
+  width: 1060px;
+  margin-bottom:60px;
 `
 const TitleTxt01 = styled.div`
-    width:1060px; height: 100px;
-    border-bottom: 1px solid #ccc;
-    overflow: hidden;
-    border-top:1px solid #ccc;
-    margin-top:20px;
-
+  width:1060px; height: 100px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  border-top:1px solid #ccc;
+  margin-top:20px;
 `
 const TitleTxt = styled.div`
-    width:1060px; height: 100px;
-    border-bottom: 1px solid #ccc;
-    overflow: hidden;
+  width:1060px; height: 100px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
 `
 const DeliTxt = styled.p`
-    width: 212px; height: 100px;
-    font-family: 'NanumSquareRound';
-    font-size:15px;
-    float: left;
-    text-align: center;
-    line-height: 100px;
-    background-color: #eee;
-    margin-right: 20px;
+  width: 212px; height: 100px;
+  font-family: 'NanumSquareRound';
+  font-size:15px;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+  background-color: #eee;
+  margin-right: 20px;
 `
 const DeliStxt =styled.p`
-    width: 800px; height: 100px;
-    font-family: 'NanumSquareRound';
-    font-size: 15px;
-    line-height: 100px;
-    float: left;
+  width: 800px; height: 100px;
+  font-family: 'NanumSquareRound';
+  font-size: 15px;
+  line-height: 100px;
+  float: left;
 `
 const Delilong = styled.p`
-    font-family: 'NanumSquareRound';
-    font-size:15px;
-    margin:8px 0;
+  font-family: 'NanumSquareRound';
+  font-size:15px;
+  margin:8px 0;
 `
 
 
 const QnaMain = styled.div`
-    width:1060px;
+  width:1060px;
 `
 const Qnadiv = styled.div`
-    width: 1060px; height: 50px;
-    border-bottom:1px solid #ccc;
-    overflow: hidden;
+  width: 1060px; height: 50px;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
 `
 const Qnadivfirst = styled.div`
-    font-family: 'NanumSquareRound';
-    width: 1060px; height: 50px;
-    border-bottom:1px solid #ccc;
-    overflow: hidden;
-    font-size: 15px;
-    background-color: #eee;
-    border-top:1px solid #ccc;
+  font-family: 'NanumSquareRound';
+  width: 1060px; height: 50px;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
+  font-size: 15px;
+  background-color: #eee;
+  border-top:1px solid #ccc;
 `
 
 const Qnatxt = styled.p`
-    width: 212px; height: 50px;
-    font-family: 'NanumSquareRound';
-    font-size:15px;
-    float: left;
-    text-align: center;
-    line-height: 50px;
+  width: 212px; height: 50px;
+  font-family: 'NanumSquareRound';
+  font-size:15px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
 `
 
 const ExchangeMain = styled.div`
-    width: 1060px; 
-    margin-bottom:100px;
+  width: 1060px; 
+  margin-bottom:100px;
 `
 const Exdiv = styled.div`
-    width: 1060px; height: 205px;
-    border-bottom:1px solid #ccc;
-    overflow: hidden;
+  width: 1060px; height: 205px;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
 `
 const Exdivfirst = styled.div`
-    width: 1060px; height: 180px;
-    border-bottom:1px solid #ccc;
-    overflow: hidden;
-    border-top:1px solid #ccc;
+  width: 1060px; height: 180px;
+  border-bottom:1px solid #ccc;
+  overflow: hidden;
+  border-top:1px solid #ccc;
 `
 const Extitle = styled.p`
-    width: 212px; height: 180px;
-    font-family: 'NanumSquareRound';
-    font-size: 14px;
-    background-color: #eee;
-    text-align: center;
-    line-height: 170px;
-    float: left;
+  width: 212px; height: 180px;
+  font-family: 'NanumSquareRound';
+  font-size: 14px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 170px;
+  float: left;
 `
 
 const Extitlesecond = styled.p`
-    width: 212px; height: 205px;
-    font-family: 'NanumSquareRound';
-    font-size: 14px;
-    background-color: #eee;
-    text-align: center;
-    line-height:205px;
-    float: left;
+  width: 212px; height: 205px;
+  font-family: 'NanumSquareRound';
+  font-size: 14px;
+  background-color: #eee;
+  text-align: center;
+  line-height:205px;
+  float: left;
 `
 
 const  Extop = styled.p`
-    width:800px; 
-    font-family: 'NanumSquareRound';
-    font-size:15px;
-    float: left;
-    margin:0 20px;
-    padding-top:30px;
+  width:800px; 
+  font-family: 'NanumSquareRound';
+  font-size:15px;
+  float: left;
+  margin:0 20px;
+  padding-top:30px;
 `
 
 const Exbottom = styled.p`
-width: 800px; 
-font-family: 'NanumSquareRound';
-font-size: 15px;
-float: left;
-margin:8px 20px;
+  width: 800px; 
+  font-family: 'NanumSquareRound';
+  font-size: 15px;
+  float: left;
+  margin:8px 20px;
 `
 
 const ReviewMain = styled.div`
-    width: 1060px;
+  width: 1060px;
 `
 const Reviewtxt = styled.div`
-    width: 1060px; height: 40px;
-    padding:30px 0;
-    border-bottom:1px solid #ccc;
+  width: 1060px; height: 40px;
+  padding:30px 0;
+  border-bottom:1px solid #ccc;
 `
 
 const ReviewBox =styled.div`
-width: 1060px; height: 210px;
-overflow: hidden;
-border-bottom: 1px solid #ccc;
+  width: 1060px; height: 210px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
 `
 const ReviewInner = styled.div`
-width: 1060px; height: 100px;
-line-height:45px;
-overflow: hidden;
-margin: 0 auto;
+  width: 1060px; height: 100px;
+  line-height:45px;
+  overflow: hidden;
+  margin: 0 auto;
 `
 const ReviewInnerTop = styled.div`
-width: 1060px; height: 100px;
-line-height:45px;
-overflow: hidden;
-margin: 0 auto;
-border-bottom:1px solid #ccc;
+  width: 1060px; height: 100px;
+  line-height:45px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-bottom:1px solid #ccc;
 `
 const ReInnerp01 = styled.p`
-width: 600px; height: 100px;
-line-height: 100px;
-float: left;
+  width: 600px; height: 100px;
+  line-height: 100px;
+  float: left;
 `
 const ReInnerp02 = styled.p`
-width: 100px; height: 100px;
-line-height: 100px;
-float: right;
+  width: 100px; height: 100px;
+  line-height: 100px;
+  float: right;
 `
 const ReInnerp03 = styled.p`
-width: 150px; height: 100px;
-line-height: 100px;
-float: left; 
-color: #00796F;
+  width: 150px; height: 100px;
+  line-height: 100px;
+  float: left; 
+  color: #00796F;
 `
-
-const saleMain = keyframes`
-  0%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
-  20%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual02.jpg'})}
-  40%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual03.jpg'})}
-  60%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual04.jpg'})}
-  80%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual05.jpg'})}
-  100%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
-`
-const SaleMain = styled.div`
-width: 1276px; height: 900px;
-margin:0 auto;
-animation-duration: 1s;
-animation: ${saleMain} 10s infinite;
-`
-const StyledSale = () => {
-  return(
-    <>
-    <SaleMain/>
-    </>
-  )
-}
-
-
-const visualMain = keyframes`
-  0%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
-  25%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img02.jpg'})}
-  50%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img03.jpg'})}
-  75%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img04.jpg'})}
-  100%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
-`
-const VisualMain =styled.div`
-width: 1276px; height:500px;
-margin:0 auto;
-animation-duration: 1s;
-animation: ${visualMain} 10s infinite;
-`
-
-
-const StyledVisual = () => {
-  return(
-    <>
-    <VisualMain/>
-    </>
-  )
-}
-
-
-
-
-
-
-
-
-
-
 
 
 const StyledReview = () => {
@@ -398,6 +343,51 @@ const StyledDelivery = () => {
 }
 
 
+const saleMain = keyframes`
+  0%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
+  20%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual02.jpg'})}
+  40%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual03.jpg'})}
+  60%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual04.jpg'})}
+  80%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual05.jpg'})}
+  100%{background-image:url(${process.env.PUBLIC_URL+'/images/sale_visual01.jpg'})}
+`
+const SaleMain = styled.div`
+  width: 1276px; height: 900px;
+  margin:0 auto;
+  animation-duration: 1s;
+  animation: ${saleMain} 10s infinite;
+`
+const StyledSale = () => {
+  return(
+    <>
+    <SaleMain/>
+    </>
+  )
+}
+
+
+const visualMain = keyframes`
+  0%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
+  25%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img02.jpg'})}
+  50%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img03.jpg'})}
+  75%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img04.jpg'})}
+  100%{background-image:url(${process.env.PUBLIC_URL+'/images/visual_img01.jpg'})}
+`
+const VisualMain =styled.div`
+  width: 1276px; height:500px;
+  margin:0 auto;
+  animation-duration: 1s;
+  animation: ${visualMain} 10s infinite;
+`
+
+
+const StyledVisual = () => {
+  return(
+    <>
+    <VisualMain/>
+    </>
+  )
+}
 
 
 
